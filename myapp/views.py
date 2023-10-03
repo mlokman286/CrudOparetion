@@ -87,3 +87,8 @@ def updatePage(request,id):
         )
         emp.save()
         return redirect('homePage')
+    
+def deletePage(request,id):
+    emp = Employes.objects.filter(id=id)
+    emp.delete()
+    return redirect('homePage')

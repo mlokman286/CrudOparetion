@@ -10,4 +10,5 @@ urlpatterns = [
     path('addPage',views.addPage,name='addPage'),
     path('editPage',views.editPage,name='editPage'),
     path('updatePage/<str:id>',views.updatePage,name='updatePage'),
+    path('deletePage/<str:id>',views.deletePage,name='deletePage'),
 ]
